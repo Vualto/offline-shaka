@@ -10,15 +10,15 @@ To test offline DRM encrypted playback, https is needed due to Chrome using EME.
 
 - Install the “Live Server” extension: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
-To enable https, you must create a certificate to self authenticate for local host: 
+To enable https, you must create a certificate to self authenticate for localhost: 
 
-- Create a private key - ensure openssl is installed and input the following command: openssl genrsa -aes256 -out localhost.key 2048 
+- Create a private key - ensure openssl is installed and input the following command: 'openssl genrsa -aes256 -out localhost.key 2048' 
 
 - Provide a password. This will create the localhost.key.
 
-- Create the certificate by inputting the following command: openssl req -days 3650 -new -newkey rsa:2048 -key localhost.key -x509 -out localhost.pem
+- Create the certificate by inputting the following command: 'openssl req -days 3650 -new -newkey rsa:2048 -key localhost.key -x509 -out localhost.pem'
 
-- Input the password from the above, complete all prompts.This creates locahost.pem 
+- Input the password from the above, complete all prompts.This creates locahost.pem. 
 
 - In the root of the project, create a .vscode folder.
 
@@ -35,9 +35,9 @@ To enable https, you must create a certificate to self authenticate for local ho
 
 - You may get a warning saying the certificate is not secure. Click advanced and go continue to the site.
 
-Assuming everything has been set up correctly, you should now see the Shaka Player working locally with https
+Assuming everything has been set up correctly, you should now see the Shaka Player working locally with https.
 
-By default, Content Name is set to “vualto-drm-encrypted-video”
+By default, Content Name is set to “vualto-drm-encrypted-video”.
 
 By default, Content Manifest is set to “https://d1chyo78gdexn4.cloudfront.net/vualto-demo/tomorrowland2015/tomorrowland2015.ism/manifest.mpd” - this is a DRM encrypted video.
 
