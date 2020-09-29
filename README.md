@@ -6,9 +6,9 @@ On line 2 in offlineVualto.js , replace the const token value to a token generat
 
 To test offline DRM encrypted playback, https is needed due to Chrome using EME. The easiest way to set this up is to follow the below:
 
-Ensure Visual Studio Code is installed.
+- Ensure Visual Studio Code is installed.
 
-Install the “Live Server” extension: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+- Install the “Live Server” extension: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 To enable https, you must create a certificate to self authenticate for local host: 
 
