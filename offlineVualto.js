@@ -30,8 +30,6 @@ function initPlayer() {
     }
   });
 
-  console.log(widevineLaURL);
-
   initStorage(player);
 
   const downloadButton = document.getElementById('download-button');
