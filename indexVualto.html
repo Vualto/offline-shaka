@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="dist/shaka-player.compiled.js"></script>
+    <script src="offlineVualto.js"></script>
+
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <span style="width:120px;display:inline-block">Content Name</span>
+        <input id="asset-title-input" type="text" style="width:500px" value="vualto-drm-encrypted-video">
+      </div>
+      <div>
+        <span style="width:120px;display:inline-block">Content Manifest</span>
+        <input id="asset-uri-input" type="text" style="width:500px" value="https://d1chyo78gdexn4.cloudfront.net/vualto-demo/tomorrowland2015/tomorrowland2015.ism/manifest.mpd">
+      </div>
+    </div>
+
+    <div>
+      <span><button id="download-button">Download</button></span>
+    </div>
+
+    <video id="video"
+           width="640"
+           poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+           controls autoplay></video>
+
+    <table id="content-table" style="width:640px"></table>
+  </body>
+</html>
